@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-black dark:bg-black dark:text-white;
+}
+
+.header {
+  @apply bg-[color:var(--brand-red,#d80001)] text-white;
+}
+
+.footer {
+  @apply bg-black text-white;
+}
+
+.container-page {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
